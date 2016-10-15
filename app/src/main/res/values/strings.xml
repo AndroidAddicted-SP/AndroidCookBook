@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidCookBook</string>
+
+    <string name="option_menu">opção</string>
 </resources>
