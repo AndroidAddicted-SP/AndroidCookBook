@@ -2,4 +2,6 @@
     <string name="app_name">AndroidCookBook</string>
 
     <string name="option_menu">opção</string>
+    <string name="home">Home</string>
+    <string name="other">Outra</string>
 </resources>
