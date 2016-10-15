@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
+        toolbar.setTitle("MainActivity");
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 drawerLayout.openDrawer(GravityCompat.START);
                 return true;
             case R.id.action_plus:
-                Intent intent = new Intent(this, OtherActivity.class);
+                Intent intent = new Intent(this, SomeOtherActivity.class);
                 startActivity(intent);
                 return true;
         }
@@ -86,6 +87,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.nav_other:
                 intent = new Intent(this, OtherActivity.class);
+                break;
+            case R.id.nav_some:
+                intent = new Intent(this, SomeOtherActivity.class);
+                break;
+            case R.id.nav_x:
+                intent = new Intent(this, AnotherActivity.class);
                 break;
         }
 

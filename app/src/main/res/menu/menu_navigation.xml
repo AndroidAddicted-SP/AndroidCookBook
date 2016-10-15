@@ -9,5 +9,13 @@
             android:id="@+id/nav_other"
             android:icon="@drawable/ic_headset"
             android:title="@string/other" />
+        <item
+            android:id="@+id/nav_some"
+            android:icon="@drawable/ic_favorite"
+            android:title="Qualquer" />
+        <item
+            android:id="@+id/nav_x"
+            android:icon="@drawable/ic_vpn"
+            android:title="X" />
     </group>
 </menu>

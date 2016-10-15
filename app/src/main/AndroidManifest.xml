@@ -22,6 +22,18 @@
                 android:value=".MainActivity" />
         </activity>
 
+        <activity android:name=".SomeOtherActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".AnotherActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
 
     </application>
 
