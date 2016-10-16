@@ -30,7 +30,8 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:onClick="onClick"/>
 
     <Button
         android:layout_marginTop="8dp"
@@ -43,5 +44,6 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:onClick="onClick"/>
 </RelativeLayout>
