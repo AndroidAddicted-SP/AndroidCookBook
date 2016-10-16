@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         fab = (FloatingActionButton) findViewById(R.id.fab);
 
-        toolbar.setTitle("MainActivity");
+        toolbar.setTitle(getResources().getString(R.string.main_name));
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

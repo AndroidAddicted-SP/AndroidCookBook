@@ -29,7 +29,7 @@ public class OtherActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
-        toolbar.setTitle("Outra Activity");
+        toolbar.setTitle(getResources().getString(R.string.other_name));
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

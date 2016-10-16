@@ -26,7 +26,7 @@ public class AnotherActivity  extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         tabs = (TabLayout) findViewById(R.id.tabs);
 
-        toolbar.setTitle("Alguma Outra Activity");
+        toolbar.setTitle(getResources().getString(R.string.another_name));
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

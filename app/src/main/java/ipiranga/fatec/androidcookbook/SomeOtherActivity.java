@@ -30,7 +30,7 @@ public class SomeOtherActivity extends AppCompatActivity implements View.OnClick
         showDialogButton = (Button) findViewById(R.id.show_dialog);
         showSnackButton = (Button) findViewById(R.id.show_snack);
 
-        toolbar.setTitle("Qualquer Activity");
+        toolbar.setTitle(getResources().getString(R.string.some_name));
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -53,7 +53,7 @@ public class SomeOtherActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.show_snack:
-                Snackbar.make(view, "Quer ser meu amigo ?", Snackbar.LENGTH_SHORT)
+                Snackbar.make(view, getResources().getString(R.string.snack_dialog_msg), Snackbar.LENGTH_SHORT)
                         .setAction("Sim :)", new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {

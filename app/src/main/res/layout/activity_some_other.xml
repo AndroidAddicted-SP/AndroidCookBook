@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:padding="16dp"
         android:id="@+id/show_snack"
         android:text="show snackBar"
@@ -30,11 +30,10 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
-        android:textColor="@android:color/white"
-        android:onClick="onClick"/>
+        android:textColor="@android:color/white" />
 
     <Button
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:padding="16dp"
         android:id="@+id/show_dialog"
         android:text="show Dialog"
@@ -44,6 +43,5 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
-        android:textColor="@android:color/white"
-        android:onClick="onClick"/>
+        android:textColor="@android:color/white" />
 </RelativeLayout>

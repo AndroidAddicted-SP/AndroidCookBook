@@ -4,4 +4,13 @@
     <string name="option_menu">opção</string>
     <string name="home">Home</string>
     <string name="other">Outra</string>
+    <string name="some_name">Qualquer Activity</string>
+    <string name="other_name">Outra Activity</string>
+    <string name="main_name">Main Activity</string>
+    <string name="another_name">Alguma Outra Activity</string>
+    <string name="snack_dialog_msg">Quer ser meu amigo ?</string>
+    <string name="title_msg">Caixa de Diálogo</string>
+    <string name="dialog_msg">Deseja ver o GitHub deste projeto ?</string>
+    <string name="yes">Sim</string>
+    <string name="no">"Não"</string>
 </resources>
