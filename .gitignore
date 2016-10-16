@@ -6,5 +6,5 @@
 /build
 /captures
 .externalNativeBuild
-.idea/misc
+.idea/misc.xml
 .idea/gradle
