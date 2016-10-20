@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/value_container">
+
+                <ImageView
+                    android:id="@+id/money_image"
+                    android:src="@drawable/ic_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/sale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/money_image"
+                    android:text="@string/values_title"
+                    style="@style/TextView.Title"/>
+
+                <TextView
+                    android:id="@+id/sale_value_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/money_image"
+                    android:layout_below="@id/sale"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+                <TextView
+                    android:id="@+id/condom_value_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/money_image"
+                    android:layout_below="@id/sale_value_text"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+                <TextView
+                    android:id="@+id/iptu_value_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/money_image"
+                    android:layout_below="@id/condom_value_text"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/value_container"
+                android:id="@+id/location_container"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:id="@+id/location_image"
+                    android:src="@drawable/ic_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/location_image"
+                    android:text="@string/location_title"
+                    style="@style/TextView.Title"/>
+
+                <TextView
+                    android:id="@+id/street_number_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/location_image"
+                    android:layout_below="@id/address"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+                <TextView
+                    android:id="@+id/complement_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/location_image"
+                    android:layout_below="@id/street_number_text"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+                <TextView
+                    android:id="@+id/neighboor_city_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/location_image"
+                    android:layout_below="@id/complement_text"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/location_container"
+                android:id="@+id/detail_container"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/star_image"
+                    android:src="@drawable/ic_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/star_image"
+                    android:text="@string/detail_title"
+                    style="@style/TextView.Title"/>
+
+                <TextView
+                    android:id="@+id/dorm_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/star_image"
+                    android:layout_below="@id/detail"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+                <TextView
+                    android:id="@+id/suites_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/star_image"
+                    android:layout_below="@id/dorm_text"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+                <TextView
+                    android:id="@+id/park_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/star_image"
+                    android:layout_below="@id/suites_text"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+                <TextView
+                    android:id="@+id/area_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/star_image"
+                    android:layout_below="@id/park_text"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_container"
+                android:id="@+id/photo_container">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:src="@drawable/ic_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/photos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/image"
+                    android:text="@string/photo_title"
+                    style="@style/TextView.Title"/>
+
+                <android.support.v4.view.ViewPager
+                    android:layout_below="@+id/photos"
+                    android:gravity="center_vertical"
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                </android.support.v4.view.ViewPager>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/photo_container"
+                android:id="@+id/charac_container">
+
+                <ImageView
+                    android:id="@+id/bookmark_image"
+                    android:src="@drawable/ic_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/characteristics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/bookmark_image"
+                    android:text="@string/charac_title"
+                    style="@style/TextView.Title"/>
+
+                <TextView
+                    android:id="@+id/character_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/bookmark_image"
+                    android:layout_below="@id/characteristics"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/charac_container"
+                android:id="@+id/obs_container">
+
+                <ImageView
+                    android:id="@+id/obs_image"
+                    android:src="@drawable/ic_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/observation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/obs_image"
+                    android:text="@string/observation_title"
+                    style="@style/TextView.Title"/>
+
+                <TextView
+                    android:id="@+id/obs_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/obs_image"
+                    android:layout_below="@id/observation"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/obs_container"
+                android:id="@+id/ads_container">
+
+                <ImageView
+                    android:id="@+id/ads_image"
+                    android:src="@drawable/ic_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ads_image"
+                    android:text="@string/advertisement_title"
+                    style="@style/TextView.Title"/>
+
+                <TextView
+                    android:id="@+id/ads_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ads_image"
+                    android:layout_below="@id/ads"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/ads_container"
+                android:id="@+id/offer_container">
+
+                <ImageView
+                    android:id="@+id/offer_image"
+                    android:src="@drawable/ic_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/offer_image"
+                    android:text="@string/sale_title"
+                    style="@style/TextView.Title"/>
+
+                <TextView
+                    android:id="@+id/offer_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/offer_image"
+                    android:layout_below="@id/offer"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/offer_container"
+                android:id="@+id/info_container">
+
+                <ImageView
+                    android:id="@+id/info_image"
+                    android:src="@drawable/ic_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/info_image"
+                    android:text="@string/info_title"
+                    style="@style/TextView.Title"/>
+
+                <TextView
+                    android:id="@+id/info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/info_image"
+                    android:layout_below="@id/info"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/info_container"
+                android:id="@+id/date_container">
+
+                <ImageView
+                    android:id="@+id/date_image"
+                    android:src="@drawable/ic_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/date_image"
+                    android:text="@string/date_title"
+                    style="@style/TextView.Title"/>
+
+                <TextView
+                    android:id="@+id/date_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/date_image"
+                    android:layout_below="@id/date"
+                    android:text=""
+                    style="@style/TextView.Content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

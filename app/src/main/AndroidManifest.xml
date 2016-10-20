@@ -34,6 +34,12 @@
                 android:value=".MainActivity" />
         </activity>
 
+        <activity android:name=".CollapsingExampleActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
 
     </application>
 

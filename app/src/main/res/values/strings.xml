@@ -13,4 +13,26 @@
     <string name="dialog_msg">Deseja ver o GitHub deste projeto ?</string>
     <string name="yes">Sim</string>
     <string name="no">"Não"</string>
+    <string name="menu_action_favorite">Adicionar aos favoritos</string>
+    <string name="menu_action_settings">Configurações</string>
+
+    <string name="sale_price">Preço de venda: %1$s</string>
+    <string name="cond_price">Preço do Condomínio: %1$s</string>
+    <string name="iptu_price">Preço de IPTU: %1$s</string>
+    <string name="offer">Oferta: %1$s</string>
+    <string name="street_number">%1$s , %2$s</string>
+    <string name="dorm">%1$s dormitório(s)</string>
+    <string name="suite">%1$s suíte(s)</string>
+    <string name="park">%1$s vaga(s)</string>
+
+    <string name="location_title">Localização</string>
+    <string name="values_title">Valores</string>
+    <string name="detail_title">Detalhes</string>
+    <string name="charac_title">Características</string>
+    <string name="info_title">Informações Complementares</string>
+    <string name="observation_title">Observação</string>
+    <string name="advertisement_title">Anunciante</string>
+    <string name="sale_title">Oferta</string>
+    <string name="date_title">Data da última Atualização</string>
+    <string name="photo_title">Fotos</string>
 </resources>

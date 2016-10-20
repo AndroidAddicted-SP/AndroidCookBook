@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
         switch(menuItem.getItemId()) {
             case R.id.nav_home:
-                intent = new Intent(this, MainActivity.class);
+                intent = new Intent(this, CollapsingExampleActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 break;
             case R.id.nav_other:
@@ -93,6 +93,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.nav_x:
                 intent = new Intent(this, AnotherActivity.class);
+                break;
+            case R.id.nav_collapsing:
+                intent = new Intent(this, CollapsingExampleActivity.class);
                 break;
         }
 
@@ -112,5 +115,4 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
         }
     }
-
 }
