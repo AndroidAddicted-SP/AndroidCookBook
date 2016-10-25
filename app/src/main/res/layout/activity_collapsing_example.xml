@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
             app:contentScrim="@color/colorPrimary"
-            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginEnd="32dp"
             app:expandedTitleMarginStart="48dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
@@ -36,7 +36,7 @@
             <android.support.v7.widget.Toolbar
                 android:id="@+id/detail_toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="72dp"
                 app:layout_collapseMode="pin"
                 app:layout_scrollFlags="scroll|enterAlways"
                 app:navigationIcon="@drawable/ic_arrow_back_white_24"/>
@@ -55,7 +55,7 @@
         <android.support.design.widget.TabLayout
             android:id="@+id/detail_venues_set_tabs"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="72dp"
             android:background="?attr/colorPrimary"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:tabMode="fixed"

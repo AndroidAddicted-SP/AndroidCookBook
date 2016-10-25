@@ -25,13 +25,22 @@ public class CollapsingExampleActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(),
+                CollapsingExampleActivity.this);
+
         // Get the ViewPager and set it's PagerAdapter so that it can display items
         viewPager = (ViewPager) findViewById(R.id.pager_venue_detail);
-        viewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
+        viewPager.setAdapter(adapter);
 
         // Give the TabLayout the ViewPager
         tabLayout = (TabLayout) findViewById(R.id.detail_venues_set_tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        // Iterate over all tabs and set the custom view
+        for (int i = 0; i < tabLayout.getTabCount(); i++) {
+            TabLayout.Tab tab = tabLayout.getTabAt(i);
+            tab.setCustomView(adapter.getTabView(i));
+        }
     }
 
     @Override
