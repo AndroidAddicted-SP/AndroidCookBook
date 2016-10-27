@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <TextView
+        android:id="@+id/txtSubCategoria"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingBottom="14dp"
+        android:paddingTop="10dp"
+        android:layout_weight="4"
+        android:textColor="@color/secondaryText"/>
+
+    <TextView
+        android:id="@+id/txtValorSubCategoria"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingBottom="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="72dp"
+        android:textColor="@color/secondaryText"
+        android:layout_weight="2"/>
+
+    <CheckBox
+        android:id="@+id/checkboxSubCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingBottom="14dp"
+        android:paddingTop="10dp"
+        android:layout_weight="0"
+        android:gravity=""/>
+
+</LinearLayout>

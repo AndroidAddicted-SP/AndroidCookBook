@@ -35,8 +35,8 @@
                     <ImageView
                         android:id="@+id/money_image"
                         android:src="@drawable/ic_money"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:padding="8dp"/>
 
                     <TextView
@@ -87,8 +87,8 @@
                     <ImageView
                         android:id="@+id/location_image"
                         android:src="@drawable/ic_address"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:padding="8dp"/>
 
                     <TextView
@@ -139,8 +139,8 @@
                     <ImageView
                         android:id="@+id/star_image"
                         android:src="@drawable/ic_star"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:padding="8dp"/>
 
                     <TextView
@@ -198,8 +198,8 @@
                     <ImageView
                         android:id="@+id/image"
                         android:src="@drawable/ic_photo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:padding="8dp"/>
 
                     <TextView
@@ -224,8 +224,8 @@
                     <ImageView
                         android:id="@+id/bookmark_image"
                         android:src="@drawable/ic_bookmark"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:padding="8dp"/>
 
                     <TextView
@@ -258,8 +258,8 @@
                     <ImageView
                         android:id="@+id/obs_image"
                         android:src="@drawable/ic_info"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:padding="8dp"/>
 
                     <TextView
@@ -291,8 +291,8 @@
                     <ImageView
                         android:id="@+id/ads_image"
                         android:src="@drawable/ic_account"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:padding="8dp"/>
 
                     <TextView
@@ -324,8 +324,8 @@
                     <ImageView
                         android:id="@+id/offer_image"
                         android:src="@drawable/ic_shop"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:padding="8dp"/>
 
                     <TextView
@@ -357,8 +357,8 @@
                     <ImageView
                         android:id="@+id/info_image"
                         android:src="@drawable/ic_label"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:padding="8dp"/>
 
                     <TextView
@@ -392,8 +392,8 @@
                     <ImageView
                         android:id="@+id/date_image"
                         android:src="@drawable/ic_today"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:padding="8dp"/>
 
                     <TextView
