@@ -7,416 +7,353 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/cardview"
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat, purus sit amet tempor tincidunt, nulla risus efficitur risus, ut ullamcorper ipsum augue eu metus. "/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingTop="7dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorSecundaryText"/>
+
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="2dp"
-            app:cardUseCompatPadding="true"
-            app:cardElevation="4dp">
+            android:orientation="vertical"
+            android:id="@+id/value_container"
+            android:paddingTop="18dp"
+            android:paddingLeft="16dp">
 
-            <LinearLayout
-                android:orientation="vertical"
+            <ImageView
+                android:id="@+id/money_image"
+                android:src="@drawable/ic_query_builder_black_24"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <GridLayout
+                android:id="@+id/horarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/money_image"
+                android:columnCount="2"
+                android:rowCount="7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:paddingLeft="34dp"
+                    android:paddingBottom="8dp"
+                    android:text="Domingo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:paddingLeft="87dp"
+                    android:paddingBottom="8dp"
+                    android:text="Fechado"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:paddingLeft="34dp"
+                    android:paddingBottom="8dp"
+                    android:text="Segunda"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:paddingLeft="87dp"
+                    android:paddingBottom="8dp"
+                    android:text="10:00 - 19:00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:paddingLeft="34dp"
+                    android:paddingBottom="8dp"
+                    android:text="Terça"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:paddingLeft="87dp"
+                    android:paddingBottom="8dp"
+                    android:text="10:00 - 19:00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:paddingLeft="34dp"
+                    android:paddingBottom="8dp"
+                    android:text="Quarta"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:paddingLeft="87dp"
+                    android:paddingBottom="8dp"
+                    android:text="10:00 - 19:00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:paddingLeft="34dp"
+                    android:paddingBottom="8dp"
+                    android:text="Quinta"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:paddingLeft="87dp"
+                    android:paddingBottom="8dp"
+                    android:text="10:00 - 19:00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:paddingLeft="34dp"
+                    android:paddingBottom="8dp"
+                    android:text="Sexta"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="5"
+                    android:layout_column="1"
+                    android:paddingLeft="87dp"
+                    android:paddingBottom="8dp"
+                    android:text="10:00 - 19:00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:paddingLeft="34dp"
+                    android:paddingBottom="8dp"
+                    android:text="Sábado"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_row="6"
+                    android:layout_column="1"
+                    android:paddingLeft="87dp"
+                    android:paddingBottom="8dp"
+                    android:text="10:00 - 21:00"/>
+
+            </GridLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="72dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorSecundaryText"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/value_container"
+            android:id="@+id/location_container"
+            android:paddingLeft="16dp">
+
+            <ImageView
+                android:id="@+id/location_image"
+                android:src="@drawable/ic_address"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <TextView
+                android:id="@+id/site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/location_image"
+                android:text="www.hitoshihairstyle.com.br"
+                style="@style/TextView.Title"
+                android:layout_marginLeft="28dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="72dp"
+            android:layout_gravity="bottom"
+            android:background="@color/colorSecundaryText"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/location_container"
+            android:id="@+id/detail_container"
+            android:paddingLeft="16dp">
+
+            <ImageView
+                android:id="@+id/star_image"
+                android:src="@drawable/ic_speaker_notes_black_24p"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <TextView
+                android:id="@+id/avaliacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/star_image"
+                android:text="Avaliação geral:"
+                android:layout_marginLeft="28dp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="8dp">
+                android:numStars="5"
+                android:stepSize="1"
+                android:rating="4"
+                android:layout_toRightOf="@id/star_image"
+                android:layout_below="@id/avaliacao"
+                android:layout_marginLeft="32dp"/>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:id="@+id/value_container">
+            <TextView
+                android:id="@+id/nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/star_image"
+                android:layout_below="@id/ratingBar"
+                android:text="3,9"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_marginLeft="38dp"/>
 
-                    <ImageView
-                        android:id="@+id/money_image"
-                        android:src="@drawable/ic_money"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:padding="8dp"/>
+            <TextView
+                android:id="@+id/avaliacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/nota"
+                android:layout_below="@id/ratingBar"
+                android:text="(15 avaliações)"
+                style="@style/TextView.Content" />
 
-                    <TextView
-                        android:id="@+id/sale"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/money_image"
-                        android:text="@string/values_title"
-                        style="@style/TextView.Title"/>
+            <View
+                android:id="@+id/divisor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="72dp"
+                android:layout_gravity="bottom"
+                android:layout_below="@id/avaliacoes"
+                android:background="@color/colorSecundaryText"/>
 
-                    <TextView
-                        android:id="@+id/sale_value_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/money_image"
-                        android:layout_below="@id/sale"
-                        android:text="R$ 350,00"
-                        style="@style/TextView.Content"/>
+            <TextView
+                android:id="@+id/ultimas_avaliacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/star_image"
+                android:layout_below="@id/divisor"
+                android:text="Últimas Atualizações"
+                android:paddingBottom="8dp"
+                style="@style/TextView.Content" />
 
-                    <TextView
-                        android:id="@+id/condom_value_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/money_image"
-                        android:layout_below="@id/sale_value_text"
-                        android:text="Até que é barato"
-                        style="@style/TextView.Content"/>
+            <TextView
+                android:id="@+id/nome_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/star_image"
+                android:layout_below="@id/ultimas_avaliacoes"
+                android:paddingBottom="8dp"
+                android:text="Paula S."
+                android:textColor="@color/colorPrimaryText"
+                style="@style/TextView.Content" />
 
-                    <TextView
-                        android:id="@+id/iptu_value_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/money_image"
-                        android:layout_below="@id/condom_value_text"
-                        android:text=""
-                        style="@style/TextView.Content"/>
+            <RatingBar
+                android:id="@+id/ratingBarUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:stepSize="1"
+                android:rating="3"
+                android:layout_toRightOf="@id/nome_usuario"
+                android:layout_below="@id/ultimas_avaliacoes"/>
 
-                </RelativeLayout>
+            <TextView
+                android:id="@+id/data_comentario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ratingBarUsuario"
+                android:layout_below="@id/ultimas_avaliacoes"
+                android:text="3 meses atrás"
+                style="@style/TextView.Content" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/value_container"
-                    android:id="@+id/location_container"
-                    android:layout_margin="8dp">
+            <TextView
+                android:id="@+id/descricao_comentario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/star_image"
+                android:layout_below="@id/nome_usuario"
+                android:text="De maneira geral o salão tem uma estrutura muito boa, mas o serviço deixou a desejar."
+                style="@style/TextView.Content"/>
 
-                    <ImageView
-                        android:id="@+id/location_image"
-                        android:src="@drawable/ic_address"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:padding="8dp"/>
+        </RelativeLayout>
 
-                    <TextView
-                        android:id="@+id/address"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/location_image"
-                        android:text="@string/location_title"
-                        style="@style/TextView.Title"/>
-
-                    <TextView
-                        android:id="@+id/street_number_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/location_image"
-                        android:layout_below="@id/address"
-                        android:text="Rua dos addicteds"
-                        style="@style/TextView.Content"/>
-
-                    <TextView
-                        android:id="@+id/complement_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/location_image"
-                        android:layout_below="@id/street_number_text"
-                        android:text="Perto de Palo Alto"
-                        style="@style/TextView.Content"/>
-
-                    <TextView
-                        android:id="@+id/neighboor_city_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/location_image"
-                        android:layout_below="@id/complement_text"
-                        android:text="MontainView"
-                        style="@style/TextView.Content"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/location_container"
-                    android:id="@+id/detail_container"
-                    android:padding="8dp">
-
-                    <ImageView
-                        android:id="@+id/star_image"
-                        android:src="@drawable/ic_star"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:padding="8dp"/>
-
-                    <TextView
-                        android:id="@+id/detail"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/star_image"
-                        android:text="@string/detail_title"
-                        style="@style/TextView.Title"/>
-
-                    <TextView
-                        android:id="@+id/dorm_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/star_image"
-                        android:layout_below="@id/detail"
-                        android:text="Bem espaçoso os dormitórios"
-                        style="@style/TextView.Content"/>
-
-                    <TextView
-                        android:id="@+id/suites_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/star_image"
-                        android:layout_below="@id/dorm_text"
-                        android:text="Suite presidencial"
-                        style="@style/TextView.Content"/>
-
-                    <TextView
-                        android:id="@+id/park_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/star_image"
-                        android:layout_below="@id/suites_text"
-                        android:text="Não tem estacionamento"
-                        style="@style/TextView.Content"/>
-
-                    <TextView
-                        android:id="@+id/area_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/star_image"
-                        android:layout_below="@id/park_text"
-                        android:text="450 metros quadrados"
-                        style="@style/TextView.Content"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/detail_container"
-                    android:id="@+id/photo_container">
-
-                    <ImageView
-                        android:id="@+id/image"
-                        android:src="@drawable/ic_photo"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:padding="8dp"/>
-
-                    <TextView
-                        android:id="@+id/photos"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/image"
-                        android:text="@string/photo_title"
-                        style="@style/TextView.Title"/>
-
-
-                </RelativeLayout>
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/photo_container"
-                    android:id="@+id/charac_container">
-
-                    <ImageView
-                        android:id="@+id/bookmark_image"
-                        android:src="@drawable/ic_bookmark"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:padding="8dp"/>
-
-                    <TextView
-                        android:id="@+id/characteristics"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/bookmark_image"
-                        android:text="@string/charac_title"
-                        style="@style/TextView.Title"/>
-
-                    <TextView
-                        android:id="@+id/character_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/bookmark_image"
-                        android:layout_below="@id/characteristics"
-                        android:text="Todo de alvenaria"
-                        style="@style/TextView.Content"/>
-
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/charac_container"
-                    android:id="@+id/obs_container">
-
-                    <ImageView
-                        android:id="@+id/obs_image"
-                        android:src="@drawable/ic_info"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:padding="8dp"/>
-
-                    <TextView
-                        android:id="@+id/observation"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/obs_image"
-                        android:text="@string/observation_title"
-                        style="@style/TextView.Title"/>
-
-                    <TextView
-                        android:id="@+id/obs_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/obs_image"
-                        android:layout_below="@id/observation"
-                        android:text="Sem saber que era impossível, foi lá e fez"
-                        style="@style/TextView.Content"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/obs_container"
-                    android:id="@+id/ads_container">
-
-                    <ImageView
-                        android:id="@+id/ads_image"
-                        android:src="@drawable/ic_account"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:padding="8dp"/>
-
-                    <TextView
-                        android:id="@+id/ads"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ads_image"
-                        android:text="@string/advertisement_title"
-                        style="@style/TextView.Title"/>
-
-                    <TextView
-                        android:id="@+id/ads_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ads_image"
-                        android:layout_below="@id/ads"
-                        android:text="Android Addicted LTDA"
-                        style="@style/TextView.Content"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/ads_container"
-                    android:id="@+id/offer_container">
-
-                    <ImageView
-                        android:id="@+id/offer_image"
-                        android:src="@drawable/ic_shop"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:padding="8dp"/>
-
-                    <TextView
-                        android:id="@+id/offer"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/offer_image"
-                        android:text="@string/sale_title"
-                        style="@style/TextView.Title"/>
-
-                    <TextView
-                        android:id="@+id/offer_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/offer_image"
-                        android:layout_below="@id/offer"
-                        android:text="Quer pagar quanto ?"
-                        style="@style/TextView.Content"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/offer_container"
-                    android:id="@+id/info_container">
-
-                    <ImageView
-                        android:id="@+id/info_image"
-                        android:src="@drawable/ic_label"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:padding="8dp"/>
-
-                    <TextView
-                        android:id="@+id/info"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/info_image"
-                        android:text="@string/info_title"
-                        style="@style/TextView.Title"/>
-
-                    <TextView
-                        android:id="@+id/info_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/info_image"
-                        android:layout_below="@id/info"
-                        android:text="In certain cases, instead of the default tab view we may want
-                        to apply a custom XML layout for each tab. To achieve this, iterate over all
-                        the TabLayout.Tabs after attaching the sliding tabs to the pager"
-                        style="@style/TextView.Content"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_below="@id/info_container"
-                    android:id="@+id/date_container">
-
-                    <ImageView
-                        android:id="@+id/date_image"
-                        android:src="@drawable/ic_today"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:padding="8dp"/>
-
-                    <TextView
-                        android:id="@+id/date"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/date_image"
-                        android:text="@string/date_title"
-                        style="@style/TextView.Title"/>
-
-                    <TextView
-                        android:id="@+id/date_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/date_image"
-                        android:layout_below="@id/date"
-                        android:text="Ontem"
-                        style="@style/TextView.Content"/>
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
     </LinearLayout>
+
 </android.support.v4.widget.NestedScrollView>

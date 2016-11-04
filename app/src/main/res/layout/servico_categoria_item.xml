@@ -8,6 +8,10 @@
         android:id="@+id/txtCategoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimary"/>
+        android:textColor="@color/colorPrimary"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:gravity="center_vertical"/>
 
 </LinearLayout>

@@ -2,7 +2,6 @@ package ipiranga.fatec.androidcookbook;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,32 +16,39 @@ public class ViewHolderProfissionais extends RecyclerView.ViewHolder {
 
     public ViewHolderProfissionais(View itemView) {
         super(itemView);
-        nomeSubCategoria        = (TextView) itemView.findViewById(R.id.txtSubCategoria);
-        valorSubCategoria       = (TextView) itemView.findViewById(R.id.txtSubCategoria);
-        subCategoriaSelecionada = (CheckBox) itemView.findViewById(R.id.checkboxSubCategoria);
+        nomeProfissional = (TextView) itemView.findViewById(R.id.txtNomeProfissional);
+        nomeProfissao    = (TextView) itemView.findViewById(R.id.txtProfissao);
+        fotoPerfil       = (ImageView) itemView.findViewById(R.id.fotoPerfil);
     }
 
-    public TextView getNomeSubCategoria() {
-        return nomeSubCategoria;
+    public ViewHolderProfissionais(View itemView, TextView nomeProfissional, TextView nomeProfissao, ImageView fotoPerfil) {
+        super(itemView);
+        this.nomeProfissional = nomeProfissional;
+        this.nomeProfissao = nomeProfissao;
+        this.fotoPerfil = fotoPerfil;
     }
 
-    public void setNomeSubCategoria(TextView nomeSubCategoria) {
-        this.nomeSubCategoria = nomeSubCategoria;
+    public TextView getNomeProfissional() {
+        return nomeProfissional;
     }
 
-    public TextView getValorSubCategoria() {
-        return valorSubCategoria;
+    public void setNomeProfissional(TextView nomeProfissional) {
+        this.nomeProfissional = nomeProfissional;
     }
 
-    public void setValorSubCategoria(TextView valorSubCategoria) {
-        this.valorSubCategoria = valorSubCategoria;
+    public TextView getNomeProfissao() {
+        return nomeProfissao;
     }
 
-    public CheckBox getSubCategoriaSelecionada() {
-        return subCategoriaSelecionada;
+    public void setNomeProfissao(TextView nomeProfissao) {
+        this.nomeProfissao = nomeProfissao;
     }
 
-    public void setSubCategoriaSelecionada(CheckBox subCategoriaSelecionada) {
-        this.subCategoriaSelecionada = subCategoriaSelecionada;
+    public ImageView getFotoPerfil() {
+        return fotoPerfil;
+    }
+
+    public void setFotoPerfil(ImageView fotoPerfil) {
+        this.fotoPerfil = fotoPerfil;
     }
 }

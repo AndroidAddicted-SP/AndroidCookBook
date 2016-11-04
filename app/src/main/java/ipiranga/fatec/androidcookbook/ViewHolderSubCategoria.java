@@ -17,7 +17,7 @@ public class ViewHolderSubCategoria extends RecyclerView.ViewHolder {
     public ViewHolderSubCategoria(View itemView) {
         super(itemView);
         nomeSubCategoria        = (TextView) itemView.findViewById(R.id.txtSubCategoria);
-        valorSubCategoria       = (TextView) itemView.findViewById(R.id.txtSubCategoria);
+        valorSubCategoria       = (TextView) itemView.findViewById(R.id.txtValorSubCategoria);
         subCategoriaSelecionada = (CheckBox) itemView.findViewById(R.id.checkboxSubCategoria);
     }
 

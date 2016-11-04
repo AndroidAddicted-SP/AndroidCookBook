@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:paddingLeft="16dp">
+
+        <ipiranga.fatec.androidcookbook.CircleImageView
+            android:id="@+id/fotoPerfil"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowSpan="2"
+            android:src="@drawable/team2"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:layout_gravity="fill_horizontal"/>
+
+        <TextView
+            android:id="@+id/txtNomeProfissional"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="8dp"
+            android:text="Adriana Ferreira"
+            android:layout_gravity="fill_horizontal"/>
+
+        <TextView
+            android:id="@+id/txtProfissao"
+            android:textColor="@color/secondaryText"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginLeft="16dp"
+            android:text="Cabeleireira"
+            android:layout_gravity="fill_horizontal"/>
+
+        <ImageView
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_rowSpan="2"
+            android:layout_gravity="right|end"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/ic_query_builder_black_24"/>
+
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="72dp"
+        android:paddingBottom="16dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorSecundaryText"/>
+
+</LinearLayout>
+
