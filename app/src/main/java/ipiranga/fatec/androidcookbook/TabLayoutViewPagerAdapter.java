@@ -13,11 +13,11 @@ import java.util.Locale;
  * Created by turbiani on 19/10/16.
  */
 
-public class ViewPagerAdapter extends FragmentPagerAdapter {
+public class TabLayoutViewPagerAdapter extends FragmentPagerAdapter {
     private Context context;
     private String titulosAbas[] = new String[] { "Serviços", "Informações", "Equipe" };
 
-    public ViewPagerAdapter(FragmentManager fm, Context context) {
+    public TabLayoutViewPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
     }

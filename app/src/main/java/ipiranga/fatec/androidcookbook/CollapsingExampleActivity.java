@@ -27,7 +27,7 @@ public class CollapsingExampleActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(),
+        TabLayoutViewPagerAdapter adapter = new TabLayoutViewPagerAdapter(getSupportFragmentManager(),
                 CollapsingExampleActivity.this);
 
         // Get the ViewPager and set it's PagerAdapter so that it can display items
